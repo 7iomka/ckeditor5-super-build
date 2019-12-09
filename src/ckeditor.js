@@ -3,6 +3,9 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
  */
 
+// Import custom languages (note: .po files will be collected by webpack only if corresponded dir has lang>translations structure)
+import './custom-translations/ckeditor5-ui/'; // import empty index.js file
+
 // The editor creator to use.
 import DecoupledEditorBase from '@ckeditor/ckeditor5-editor-decoupled/src/decouplededitor';
 
